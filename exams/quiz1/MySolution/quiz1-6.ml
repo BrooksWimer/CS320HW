@@ -4,7 +4,8 @@
 
 let pp x y = fun f -> f(x,y)
 
-let ff = (* WRITE YOUR CODE *)
+let ff = let apply (x, y) = x - y in
+apply
 
 (* Give an implementation of ff that
    makes the following assertions pass *)
