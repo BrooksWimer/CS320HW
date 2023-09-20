@@ -15,9 +15,13 @@ let isPrime(n) =
   let rec aux div = 
     if div > int_sqrt(n) then
       true
-    else if n mod div = 0 then false
+    else if n mod div = 0 then 
+      false
     else aux (div+1)
   in
+  aux 2
+in
+
   if n < 2 then false else int1_forall(n)(test)
 ;;
 
